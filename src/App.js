@@ -3,23 +3,22 @@ import Btn from './Btn';
 import Num from './Num';
 
 function App() {
-  const [num, setNum] = useState(0);
-
-  const increment = () => {
-    if (num < 15) setNum(num + 1);
+  const [num, setNum] = useState(0);  const increment = () => {
+    if (num + 1 <= 15) setNum(num + 1);
   };
 
   const increment5 = () => {
-    if (num < 15) setNum(num + 5);
+    if (num + 5 <= 15) setNum(num + 5);
   };
 
   const decrement = () => {
-    if (num > 0) setNum(num - 1);
+    if (num - 1 >= 0) setNum(num - 1);
   };
 
   const decrement5 = () => {
-    if (num > 0) setNum(num - 5);
+    if (num - 5 >= 0) setNum(num - 5);
   };
+
 
   const reset = () => {
     setNum(0);
